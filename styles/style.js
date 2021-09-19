@@ -15,8 +15,7 @@ export const gStyle = StyleSheet.create({
         fontSize:20,
         color: 'black',
         fontWeight: 'bold',
-       // top: 15,
-        left: 10,
+        flex: 1
     },
       text:{
           fontSize:14,

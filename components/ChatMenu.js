@@ -10,10 +10,10 @@ export default function ChatMenu(){
     return (
       <View>
 
-        <View style={{flexDirection:'row',}}> 
+        <View style={{ flexDirection:'row', paddingHorizontal: 10,}}> 
            <Text style={gStyle.title}>Чаты</Text>
-           <Button
-              buttonStyle={{ width: 40,height: 40, backgroundColor: 'red', left: 300,  }}
+           <Button 
+              buttonStyle={{ width: 40,height: 40, backgroundColor: 'white', }}
               icon={
                 <Feather 
                  name="search" 
@@ -21,10 +21,9 @@ export default function ChatMenu(){
                  color="black" 
                 />
               }
-              
             />
           <Button
-            buttonStyle={{ width: 40,height: 40, backgroundColor: 'red', }}
+            buttonStyle={{ width: 40,height: 40, backgroundColor: 'white', }}
             icon={
               <FontAwesome 
                 name="pencil-square-o" 
@@ -46,6 +45,4 @@ export default function ChatMenu(){
     );
 }
 
-//const styles = StyleSheet.create({
-    
-  //});
+//const styles = StyleSheet.create({});
