@@ -10,24 +10,24 @@ export default function ChatMenu(){
     return (
       <View>
 
-        <View style={{ flexDirection:'row', paddingHorizontal: 10,}}> 
+        <View style={{ flexDirection:'row', paddingHorizontal: 10, backgroundColor: 'white',}}> 
            <Text style={gStyle.title}>Чаты</Text>
            <Button 
-              buttonStyle={{ width: 40,height: 40, backgroundColor: 'white', }}
+              buttonStyle={{ width: 50,height: 50, backgroundColor: 'white', }}
               icon={
                 <Feather 
                  name="search" 
-                 size={24} 
+                 size={30} 
                  color="black" 
                 />
               }
             />
           <Button
-            buttonStyle={{ width: 40,height: 40, backgroundColor: 'white', }}
+            buttonStyle={{ width: 50,height: 50, backgroundColor: 'white', }}
             icon={
               <FontAwesome 
                 name="pencil-square-o" 
-                size={24} 
+                size={30} 
                 color="black" />
             }
 

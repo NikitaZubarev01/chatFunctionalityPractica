@@ -12,10 +12,11 @@ export const gStyle = StyleSheet.create({
       //  color: 'red',
    // },
     title:{
-        fontSize:20,
+        fontSize:26,
         color: 'black',
         fontWeight: 'bold',
-        flex: 1
+        flex: 1,
+        
     },
       text:{
           fontSize:14,
