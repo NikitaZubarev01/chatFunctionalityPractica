@@ -4,12 +4,12 @@ import { View } from 'react-native';
 
 import { gStyle } from './styles/style';
 
-import ChatMenu from './components/ChatMenu';
+import NavigateStack from './navigation/Navigate';
 
 export default function App() {
   return (
     <View style={gStyle.AndroidSafeArea}>
-      <ChatMenu/>
+      <NavigateStack/>
     </View>
   );
 }
