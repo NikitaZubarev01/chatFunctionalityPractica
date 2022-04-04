@@ -2,6 +2,7 @@ import React from 'react';
 
 import ChatMenu from '../components/ChatMenu';
 import SearchScreen from '../components/SearchScreen';
+import AddChatScreen from '../components/AddChatScreen';
 
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -19,6 +20,14 @@ export default function Navigate() {
             <Stack.Screen
             name = "ChatMenu"
             component={ChatMenu}
+            />
+            <Stack.Screen
+            name = "SearchScreen"
+            component={SearchScreen}
+            />
+            <Stack.Screen
+            name = "AddChatScreen"
+            component={AddChatScreen}
             />
         </Stack.Navigator>
     </NavigationContainer>;

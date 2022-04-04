@@ -6,7 +6,7 @@ import { gStyle } from '../styles/style';
 import { Feather } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons'; 
 
-export default function ChatMenu(){
+export default function ChatMenu({navigation}){
     return (
       <View>
 
@@ -21,6 +21,7 @@ export default function ChatMenu(){
                  color="black" 
                 />
               }
+              onPress={() => navigation.navigate('SearchScreen')}
             />
           <Button
             buttonStyle={{ width: 50,height: 50, backgroundColor: 'white', }}
@@ -30,7 +31,7 @@ export default function ChatMenu(){
                 size={30} 
                 color="black" />
             }
-
+            onPress={() => navigation.navigate('AddChatScreen')}
           />
         </View>
 
