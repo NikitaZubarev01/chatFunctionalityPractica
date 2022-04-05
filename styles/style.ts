@@ -7,10 +7,7 @@ export const gStyle = StyleSheet.create({
         backgroundColor: 'white',
         paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0
     },
-    //background:{
-     //   flex: 1,
-      //  color: 'red',
-   // },
+    
     title:{
         fontSize:26,
         color: 'black',
@@ -18,9 +15,9 @@ export const gStyle = StyleSheet.create({
         flex: 1,
         
     },
-      text:{
-          fontSize:14,
-          color: 'black',
-    },
 
+    text:{
+        fontSize:14,
+        color: 'black',
+    },
 })

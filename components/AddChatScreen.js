@@ -11,7 +11,11 @@ export default function SearchScreen({navigation}){
         <View>
             <View style={{ flexDirection:'row', paddingHorizontal: 10, backgroundColor: 'white',}}>
                 <Button
-                 buttonStyle={{ width: 50,height: 50, backgroundColor: 'white', }}
+                 buttonStyle={{ 
+                    width: 50,
+                    height: 50, 
+                    backgroundColor: 'white', 
+                    }}
                  icon={
                     <Ionicons 
                     name="arrow-back" 
