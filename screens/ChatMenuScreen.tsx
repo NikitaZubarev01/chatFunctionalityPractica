@@ -3,18 +3,19 @@ import {StyleSheet } from 'react-native';
 import { View,  } from 'react-native';
 import { Text, Divider, Button, } from 'react-native-elements';
 
-import { gStyle } from '../styles/style';
+import { gStyle } from '../styles/style2';
 import { Feather } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons'; 
 
-import ChatListItem from './ChatListItem';
+import ChatListItem from '../components/ChatListItem';
 import chatRooms from '../data/ChatRooms'; 
+import { FlatList } from 'react-native-gesture-handler';
 
 export default function ChatMenu({navigation}){
     return (
       <View>
 
-        <View style={{ flexDirection:'row', paddingHorizontal: 10, backgroundColor: 'white',}}> 
+        <View style={{ flexDirection:'row', paddingHorizontal: 10, backgroundColor: 'white', paddingTop: 20}}> 
 
            <Text style={gStyle.title}>Чаты</Text>
 
@@ -60,7 +61,12 @@ export default function ChatMenu({navigation}){
         </View>
 
         <View style = { styles.container}>
-          <ChatListItem chatRoom = {chatRooms[0]} />
+          <FlatList 
+          style = {{width:'100%',}}
+          data={chatRooms} 
+          renderItem={({ item }) => <ChatListItem chatRoom={item} />}
+          keyExtractor={(item) => item.id}
+          />
         </View>
       
       
@@ -70,9 +76,9 @@ export default function ChatMenu({navigation}){
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop:100
+    
   }
 });

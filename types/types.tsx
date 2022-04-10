@@ -4,7 +4,7 @@ export type User = {
     imageUri: String;
 }
 
-export type Messege = {
+export type Message = {
     id: String;
     content: string;
     createdAt: string;
@@ -14,5 +14,5 @@ export type Messege = {
 export type ChatRoom = {
     id: String;
     users: [User];
-    lastMessage: Messege;
+    lastMessage: Message;
 }
