@@ -14,43 +14,6 @@ import { FlatList } from 'react-native-gesture-handler';
 export default function ChatMenu({navigation}){
     return (
       <View>
-
-        <View style={{ flexDirection:'row', paddingHorizontal: 10, backgroundColor: 'white', paddingTop: 20}}> 
-
-           <Text style={gStyle.title}>Чаты</Text>
-
-           <Button 
-              buttonStyle={{ width: 50,
-                height: 50, 
-                backgroundColor: 'white', 
-              }}
-              icon={
-                <Feather 
-                 name="search" 
-                 size={30} 
-                 color="black" 
-                />
-              }
-              onPress={() => navigation.navigate('SearchScreen')}
-            />
-
-          <Button
-            buttonStyle={{ 
-              width: 50,
-              height: 50, 
-              backgroundColor: 'white', 
-            }}
-            icon={
-              <FontAwesome 
-                name="pencil-square-o" 
-                size={30} 
-                color="black" />
-            }
-            onPress={() => navigation.navigate('AddChatScreen')}
-          />
-
-        </View>
-
         <View>
         <Divider
           style={{ width: "100%", }}

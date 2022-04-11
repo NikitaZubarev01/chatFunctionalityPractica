@@ -4,12 +4,12 @@ import { View } from 'react-native';
 
 import { gStyle } from './styles/style2';
 
-import NavigateStack from './navigation/Navigate';
+import Navigate from './navigation';
 
 export default function App() {
   return (
-    <View style={gStyle.AndroidSafeArea}>
-      <NavigateStack/>
+    <View style = {gStyle.AndroidSafeArea}>
+      <Navigate/>
     </View>
   );
 }

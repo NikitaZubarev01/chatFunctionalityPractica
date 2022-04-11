@@ -10,22 +10,6 @@ export default function SearchScreen({navigation}){
     const [search, setSearch] = React.useState('');
     return(
         <View style = {{flexDirection: 'row' }}>
-                <Button
-                 buttonStyle={{ 
-                    width: 50,
-                    height: 50, 
-                    backgroundColor: 'white',
-                    flex: 1
-                 }}
-                 icon={
-                    <Ionicons 
-                    name="arrow-back" 
-                    size={30} 
-                    color="black" />
-                  }
-                 onPress={() => navigation.goBack()}
-                />
-
             <View style={{ flex: 1}}>
                 <SearchBar style={{}}
                     platform="android"
