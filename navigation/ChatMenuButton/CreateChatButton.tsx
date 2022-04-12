@@ -7,7 +7,7 @@ import { FontAwesome } from '@expo/vector-icons';
 const CreateChatButton = () => {
     const navigation = useNavigation();
     return (
-        <TouchableOpacity onPress={() => navigation.navigate('AddChatScreen')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Friends')}>
         <View>
            
                 <FontAwesome

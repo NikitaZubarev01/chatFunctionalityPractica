@@ -3,7 +3,7 @@ import React from 'react';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
 import ChatMenuScreen from '../screens/ChatMenuScreen';
 import SearchScreen from '../screens/SearchScreen';
-import AddChatScreen from '../screens/AddChatScreen';
+import FriendsScreen from '../screens/FriendsScreen';
 import SearchButton from './ChatMenuButton/SearchButton';
 import CreateChatButton from './ChatMenuButton/CreateChatButton';
 
@@ -57,8 +57,8 @@ export default function Navigate() {
                 component={SearchScreen}
             />
             <Stack.Screen
-                name = "AddChatScreen"
-                component={AddChatScreen}
+                name = "Friends"
+                component={FriendsScreen}
             />
             <Stack.Screen
                 name = "ChatRoom"

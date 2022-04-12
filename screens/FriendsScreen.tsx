@@ -5,31 +5,21 @@ import { Text, Divider, Button, } from 'react-native-elements';
 
 import { gStyle } from '../styles/style2'; 
 
-import ChatListItem from '../components/ChatListItem';
-import chatRooms from '../data/ChatRooms'; 
+import FriendsListItem from '../components/FriendsListItem';
+import users from '../data/Users'; 
 import { FlatList } from 'react-native-gesture-handler';
 
-export default function ChatMenu({navigation}){
+export default function Friends({navigation}){
     return (
       <View>
-        <View>
-        <Divider
-          style={{ width: "100%", }}
-          color="gray"
-          width={2}
-          orientation="horizontal"
-        />
-        </View>
-
         <View style = { styles.container}>
           <FlatList 
           style = {{width:'100%',}}
-          data={chatRooms} 
-          renderItem={({ item }) => <ChatListItem chatRoom={item} />}
+          data={users} 
+          renderItem={({ item }) => <FriendsListItem user={item} />}
           keyExtractor={(item) => item.id}
           />
         </View>
-      
       
       </View> 
     );  
